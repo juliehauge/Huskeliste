@@ -1,22 +1,49 @@
-.App {
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,300,900&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body, h2, p {
+  margin: 0;
+}
+
+main {
+  margin: 5rem auto;
+  width: 80vh;
+}
+
+.navbar {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  padding: 1.5rem;
+  justify-content: center;
+  background-color: rgb(49, 48, 48);
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.navbar a, .huskeliste-nav {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 100;
   color: white;
+  text-decoration: none;
+  letter-spacing: 0.2rem;
+  font-size: 22px;
 }
 
-.App-link {
-  color: #09d3ac;
+
+.huskeliste-nav {
+  font-family: 'Roboto', sans-serif;
+  font-size: 32px;
+  font-weight: 100;
+}
+
+.navbar a.chosen,
+.navbar a:hover {
+  border-bottom: 2px solid mediumaquamarine;
+}
+  
+
+.overskrift {
+  margin: 1rem;
 }
